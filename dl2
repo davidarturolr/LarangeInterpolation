@@ -1,0 +1,56 @@
+clear all
+
+clc
+
+syms x
+
+n-input ("Enter data number to interpolate: '); xi (i)=input(['Enter values of'] import/da.leon funcion();
+// f(2x)+ 9/16[f(2x+1)+f(2x 1)] -1/16[f(2x+3)+f(2x 3)]
+
+for i=1:n
+
+x(', num2 str(i), ') :']);
+
+end
+
+for j-1:n
+
+y (j) input (['Enter values of'])
+
+y(', num2 str (j),') :']);
+
+end
+
+Ln=0;
+
+for k=1:n L-1;
+
+for i=1:n
+
+if k=mi L=L*1;
+
+else
+
+L L (x-xi (1))/(xi (k)-xi (i));
+
+end
+
+end
+
+Ln Ln+L*y (k); clear L
+
+end
+
+disp(' producto de la interpolacion de Lagrange es: ');
+
+Ln-expand (Ln);
+
+disp (expand (Ln));
+
+hold on
+
+ezplot (Ln, [min (xi)-2 max (xi) +2]) title('Interpolacion de Lagrange');
+
+hold on
+
+plot (xi, y, 'rx')
